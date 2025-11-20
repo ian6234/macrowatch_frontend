@@ -25,7 +25,6 @@ function HomePage() {
 
   return (
       <>
-          <p>ts pmo icl</p>
           <div className="rate_forecasts">
               <div className="forecast_row">
                   <RateForecastCard data={apiData['rate_forecasts']['us_forecast']}/>
