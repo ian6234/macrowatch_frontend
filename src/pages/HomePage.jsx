@@ -31,7 +31,7 @@ function HomePage() {
                   <RateForecastCard data={apiData['rate_forecasts']['uk_forecast']}/>
               </div>
               <YieldCurveCard data={apiData['yield_curves']['us_yield_curve']}/>
-              <SurfaceChartCard data={apiData['rate_forecasts']['us_forecast']}/>
+              <SurfaceChartCard data={apiData['options_data']}/>
           </div>
       </>
   )
