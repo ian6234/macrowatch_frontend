@@ -5,6 +5,7 @@ import './HomePage.css'
 import RateForecastCard from "../components/rate_forecast_card.jsx";
 import YieldCurveCard from "../components/yield_curve_card.jsx";
 import SurfaceChartCard from "../components/surface_chart_card.jsx";
+import HeatmapCard from "../components/heatmap_card.jsx";
 
 function HomePage() {
     const [apiData, setApiData] = useState(null); // Step 2
@@ -32,6 +33,7 @@ function HomePage() {
               </div>
               <YieldCurveCard data={apiData['yield_curves']['us_yield_curve']}/>
               <SurfaceChartCard data={apiData['options_data']}/>
+              <HeatmapCard data={apiData['correlation_data']}/>
           </div>
       </>
   )
